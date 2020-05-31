@@ -6,7 +6,7 @@ package com.demo.entity;
 public class StuInfo {
 
     private long id;
-    private String stu_name;
+    private String stuName;
     private char gender;
     private int age;
     private long majorId;
@@ -19,12 +19,12 @@ public class StuInfo {
         this.id = id;
     }
 
-    public String getStu_name() {
-        return stu_name;
+    public String getStuName() {
+        return stuName;
     }
 
-    public void setStu_name(String stu_name) {
-        this.stu_name = stu_name;
+    public void setStuName(String stuName) {
+        this.stuName = stuName;
     }
 
     public char getGender() {
