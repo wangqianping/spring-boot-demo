@@ -22,5 +22,4 @@ public class StuInfoController {
         return stuInfoService.getById(id);
     }
 
-
 }

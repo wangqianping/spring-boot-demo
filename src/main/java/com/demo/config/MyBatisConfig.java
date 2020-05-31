@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration//表示是一个配置类
 public class MyBatisConfig {
 
-
     @Bean
     public ConfigurationCustomizer configurationCustomizer(){
 
