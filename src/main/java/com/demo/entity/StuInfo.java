@@ -1,9 +1,11 @@
 package com.demo.entity;
 
+import java.io.Serializable;
+
 /**
  * 学生
  */
-public class StuInfo {
+public class StuInfo implements Serializable {
 
     private long id;
     private String stuName;

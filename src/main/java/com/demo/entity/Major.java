@@ -1,9 +1,11 @@
 package com.demo.entity;
 
+import java.io.Serializable;
+
 /**
  * 专业
  */
-public class Major {
+public class Major implements Serializable {
 
     private long id;
     private String name;

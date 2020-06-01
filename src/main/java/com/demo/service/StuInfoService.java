@@ -29,7 +29,7 @@ public class StuInfoService {
     }
 
     //将更新后的结果存进缓存，如果不指定key，默认为参数名
-    @CachePut(cacheNames = {"stuInfo"}, key = "#stuInfo.id")
+    @CachePut(cacheNames = {"stuInfo"})
     public StuInfo update(StuInfo stuInfo) {
         stuInfoDao.update(stuInfo);
         return stuInfo;

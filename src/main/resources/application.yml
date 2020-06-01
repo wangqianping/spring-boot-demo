@@ -1,6 +1,8 @@
 server:
   port: 80
-debug: true                                                  # 显示当前系统哪些配置类生效
+
+#debug: true                                                  # 显示当前系统哪些配置类生效
+
 #mybatis:
 #  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
 #  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
@@ -20,8 +22,14 @@ spring:
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
+  redis:
+    host: 192.168.199.129
+
 
 logging:                                                    # 日志配置
  level:
   com.demo.dao: debug                                       # 指定某个包下的日志级别
+
+initCaches:                                                 # 为指定的key设置过期时间
+ major: 1m                                                  # 这里是和cacheName相对应的
 
